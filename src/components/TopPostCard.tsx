@@ -1,5 +1,5 @@
 "use client"
-import { Calendar1, Heart, Send, MessageCircle, ChartLine } from "lucide-react";
+import { Calendar1, Heart, Send, MessageCircle } from "lucide-react";
 import Image from 'next/image'
 import React, { forwardRef } from "react";
 import { convertSocialMetric } from "../../lib/utils";

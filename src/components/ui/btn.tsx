@@ -1,11 +1,11 @@
 import React from 'react'
 
-interface BtnProps{
-    title: string,
-    type?:"primary"|"outline"|"transparent"
-    icon?: React.ReactElement,
-    onClick?: () => any,
-    className?:string
+interface BtnProps {
+  title: string;
+  type?: "primary" | "outline" | "transparent";
+  icon?: React.ReactElement;
+  onClick?: () => void;
+  className?: string;
 }
 const btn = ({ title, type="primary", icon, onClick, className }: BtnProps) => {
     return (

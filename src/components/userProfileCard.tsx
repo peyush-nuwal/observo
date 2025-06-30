@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link';
 import React, { useRef, useState } from 'react'
 
-const userProfileCard = () => {
+const UserProfileCard = () => {
   const dropdownRef=useRef<HTMLDivElement |null>(null)
   const [isOpen, setIsOpen] = useState<boolean>(false);
   
@@ -64,4 +64,4 @@ const userProfileCard = () => {
   );
 }
 
-export default userProfileCard
+export default UserProfileCard;

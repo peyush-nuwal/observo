@@ -1,7 +1,7 @@
 "use client";
 import { Mail, Bell } from "lucide-react";
 import React, { useState } from "react";
-import UserProfileCard from "./userProfileCard";
+import UserProfileCard from "./UserProfileCard";
 import Modal from "./Modal";
 
 const Topbar = () => {

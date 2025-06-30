@@ -1,4 +1,4 @@
-import { Instagram, MoveUpRight } from "lucide-react";
+import {  MoveUpRight } from "lucide-react";
 import React from 'react'
 import { StatCardProps } from "../../types";
 import { convertSocialMetric } from "../../lib/utils";
