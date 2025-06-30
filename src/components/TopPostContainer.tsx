@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useRef } from 'react'
+import React, {  useRef } from 'react'
 import TopPostCard from './TopPostCard'
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { topPosts } from '@/lib/data';

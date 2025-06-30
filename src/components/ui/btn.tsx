@@ -9,7 +9,7 @@ interface BtnProps{
 }
 const btn = ({ title, type="primary", icon, onClick, className }: BtnProps) => {
     return (
-      <button className={`btn btn-${type} ${className}`}>
+      <button onClick={()=>onClick} className={`btn btn-${type} ${className}`}>
         {title}
         {icon}
       </button>
