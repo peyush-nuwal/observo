@@ -1,21 +1,21 @@
 
-import React from "react";
+import { ComponentType, SVGProps } from "react";
 
- interface DashboardItem {
+ export interface DashboardItem {
    id: number;
    title: string;
    path: string;
-   icon: React.ComponentType;
+   icon: ComponentType<SVGProps<SVGSVGElement>>;
  }
 
- interface StatCardProps {
+ export interface StatCardProps {
    platform: "Instagram" | "Twitter" | "LinkedIn" | "YouTube" | "Facebook";
-   icon: React.ReactElement;
+   icon: ComponentType<SVGProps<SVGSVGElement>>;
    followers: number;
    gained: number;
  }
 
-interface WeeklyStats {
+export interface WeeklyStats {
   day: string;
   instagram: number;
   linkedin: number;
@@ -23,18 +23,18 @@ interface WeeklyStats {
   youtube: number;
 }
 
-interface EngagementData {
+export interface EngagementData {
   platform: "Instagram" | "Twitter" | "LinkedIn" | "YouTube" | "Facebook";
   likes: number;
   comments: number;
   shares: number;
 }
-interface EngagementRate {
+export interface EngagementRate {
   platform: "Instagram" | "Twitter" | "LinkedIn" | "YouTube";
   engagementRate: number; // % value like 4.2 = 4.2%
 }
 
-interface PlatformPerformance {
+export interface PlatformPerformance {
   platform: "Instagram" | "Twitter" | "LinkedIn" | "YouTube";
   followers: number;
   impressions: number;
@@ -43,7 +43,7 @@ interface PlatformPerformance {
   postsThisWeek: number;
 }
 
-interface TopPost {
+export interface TopPost {
   platform: "Instagram" | "LinkedIn" | "Twitter" | "YouTube";
   text: string;
   likes: number;
@@ -64,5 +64,13 @@ export interface TopPostData {
   likes: number;
   comments: number;
   shares: number;
+
+}
+
+interface WeeklyMailProps {
+  id: string;
+  title: string;
+  description: string;
+  date: string;
 
 }

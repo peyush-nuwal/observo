@@ -9,3 +9,11 @@ export const convertSocialMetric = (count: number): string => {
   return count.toString();
 };
   
+export function formatMailDate(dateString: string): string {
+  const date = new Date(dateString);
+  return date.toLocaleDateString("en-GB", {
+    day: "2-digit",
+    month: "long",
+    year: "2-digit",
+  });
+}

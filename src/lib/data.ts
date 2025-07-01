@@ -9,14 +9,14 @@ import {
   Twitter,
   Youtube,
 } from "lucide-react";
-import { EngagementData, EngagementRate, PlatformPerformance, StatCardProps, TopPostData, WeeklyStats } from "../../types";
+import { DashboardItem, EngagementData, EngagementRate, PlatformPerformance, StatCardProps, TopPostData, WeeklyMailProps, WeeklyStats } from "../../types";
 
 
 export const dashboardNavigation: DashboardItem[] = [
-  { id: 1, title: "Dashboard", path: "/dashboard", Icon: LayoutDashboard },
-  { id: 2, title: "Insights", path: "/dashboard/insight", Icon: BarChart },
-  { id: 3, title: "Settings", path: "/dashboard/settings", Icon: Settings },
-  { id: 4, title: "Contact", path: "/dashboard/contact", Icon: Info },
+  { id: 1, title: "Dashboard", path: "/dashboard", icon: LayoutDashboard },
+  { id: 2, title: "Insights", path: "/dashboard/insight", icon: BarChart },
+  { id: 3, title: "Settings", path: "/dashboard/settings", icon: Settings },
+  { id: 4, title: "Contact", path: "/dashboard/contact", icon: Info },
 ];
 
 
@@ -154,5 +154,32 @@ export const topPosts: TopPostData[] = [
     likes: 850,
     comments: 430,
     shares: 200,
+  },
+];
+
+export const weeklyMails: WeeklyMailProps[] = [
+  {
+    id: "1",
+    title: "Your Weekly Review",
+    description: "Instagram gained 134 followers. Twitter engagement dipped slightly.",
+    date: "2025-06-25",
+  },
+  {
+    id: "2",
+    title: "Social Pulse Update",
+    description: "You reached 3.2k users this week. LinkedIn posts performed best.",
+    date: "2025-06-18",
+  },
+  {
+    id: "3",
+    title: "Weekly Insights",
+    description: "Twitter engagement increased by 14%. Consider posting more threads.",
+    date: "2025-06-11",
+  },
+  {
+    id: "4",
+    title: "Your Weekly Review",
+    description: "Follower growth slowed down this week. Try more Reels on Instagram.",
+    date: "2025-06-04",
   },
 ];

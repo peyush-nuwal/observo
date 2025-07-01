@@ -33,7 +33,7 @@ const Sidebar = () => {
               href={item.path}
               className="flex items-center gap-3 px-3 py-2 rounded-md  transition-colors"
             >
-              <item.Icon className="size-6 " />
+              <item.icon className="size-6 " />
               <span className="max-lg:hidden text-sm font-medium lg:text-lg">
                 {item.title}
               </span>
