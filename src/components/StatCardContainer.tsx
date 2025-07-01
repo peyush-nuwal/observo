@@ -9,7 +9,7 @@ const StatCardContainer = () => {
         <StatCard
           key={idx}
           platform={soc.platform}
-          icon={<soc.icon className="stroke-1" />}
+          icon={soc.icon}
           followers={soc.followers}
           gained={soc.gained}
           index={idx}

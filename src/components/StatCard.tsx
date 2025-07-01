@@ -6,7 +6,7 @@ import { convertSocialMetric } from "../../lib/utils";
 
 
 const StatCard = ({
-  icon,
+  icon: Icon,
   platform,
   followers,
   gained,
@@ -26,7 +26,7 @@ const StatCard = ({
     >
       <div className="flex items-center justify-between   font-semibold tracking-wide ">
         <h2 className="flex items-center gap-2">
-          {icon}
+          <Icon className="stroke-1" />
           <span className="font-medium text-gray-700">{platform}</span>
         </h2>
         <MoveUpRight className="size-7 stroke-1 text-gray-700  " />
