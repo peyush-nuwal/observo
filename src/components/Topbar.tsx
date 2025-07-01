@@ -1,9 +1,10 @@
 "use client";
 import {  Bell } from "lucide-react";
 import React, { useState } from "react";
-import UserProfileCard from "./UserProfileCard";
+
 import Modal from "./Modal";
 import WeeklyMailContainer from "./WeeklyMailContainer";
+import UserProfileCard from "./UserProfileCard";
 
 const Topbar = () => {
   const [modalOpen, setModalOpen] = useState(false);

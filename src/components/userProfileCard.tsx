@@ -5,15 +5,15 @@ import Link from 'next/link';
 import React, { useRef, useState } from 'react'
 
 const UserProfileCard = () => {
-  const dropdownRef=useRef<HTMLDivElement |null>(null)
+  const dropdownRef = useRef<HTMLDivElement | null>(null);
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  
+
   const toggleDropDown = () => {
     setIsOpen(!isOpen);
-  }
+  };
   const mouseOver = () => {
     setIsOpen(true);
-  }
+  };
 
   const mouseLeave = () => {
     setIsOpen(false);
@@ -62,6 +62,6 @@ const UserProfileCard = () => {
       </div>
     </div>
   );
-}
+};
 
 export default UserProfileCard;
