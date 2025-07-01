@@ -6,6 +6,7 @@ import Modal from "./Modal";
 import WeeklyMailContainer from "./WeeklyMailContainer";
 import UserProfileCard from "./UserProfileCard";
 
+
 const Topbar = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -19,13 +20,11 @@ const Topbar = () => {
         <Bell className="size-5 text-gray-700" />
         <div className="absolute top-2 right-2 size-2 rounded-full bg-red-500 animate-pulse duration-100" />
       </div>
-   
-
-      <UserProfileCard />
       <Modal isOpen={modalOpen} onClose={() => setModalOpen(false)}>
-       <WeeklyMailContainer/>
+        <WeeklyMailContainer />
       </Modal>
 
+      <UserProfileCard />
     </div>
   );
 };
